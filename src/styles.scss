@@ -1,0 +1,75 @@
+/* Basic reset for styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px; /* Adjusted for a tighter layout */
+  margin-top: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #d5da38; /* Default color */
+  border: 1px solid #000000;
+  height: 300px; /* Adjusted for a standard card size */
+  width: 200px;
+  position: relative;
+  cursor: pointer; /* Indicates the card is clickable */
+  transition: transform 0.3s; /* Smooth flip effect */
+  border-radius: 20px;
+  
+}
+
+.card.flipped, .card.matched {
+  background-color: #f0f0f0;
+  /* Additional styles for flipped state */
+}
+
+/* Specific styles for each color when flipped */
+.card.red.flipped, .card.red.matched { background-color: red; }
+.card.green.flipped, .card.green.matched { background-color: green; }
+.card.blue.flipped, .card.blue.matched { background-color: blue; }
+.card.yellow.flipped, .card.yellow.matched { background-color: yellow; }
+.card.pink.flipped, .card.pink.matched { background-color: purple; }
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Space above the button */
+}
+
+#resetButton {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: red; /* or any color of your choice */
+}
+
+#highScore {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+
