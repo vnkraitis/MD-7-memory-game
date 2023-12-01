@@ -15,12 +15,22 @@
     },
     "plugins": [
         "@typescript-eslint"
+
+    
+        
     ],
     "rules": {
+        "prettier/prettier": ["error"],
         "no-restricted-syntax": "off",
         "lines-between-class-members": "off",
         "class-methods-use-this": "off",
         "import/extensions": "off",
-        "import/no-unresolved": "off"
+        "import/no-unresolved": "off",
+        "no-console": "off",
+        "quotes": "off"
     }
+
+    
+
+    
 }

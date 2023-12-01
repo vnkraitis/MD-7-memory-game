@@ -9,3 +9,4 @@ When all packages have been installed run:
 npm start
 ```
 "# MD-7-memory-game" 
+"# 9MD-Sort-Filter-Paginate" 
